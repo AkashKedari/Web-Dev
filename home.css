@@ -1,0 +1,89 @@
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #000000; 
+}
+
+ul { 
+  float: right;
+  list-style-type: none;
+}
+
+ul li { 
+  display: inline-block;
+  overflow: hidden;
+}
+
+ul li a {
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 20px; 
+  border: 2px solid transparent;
+  margin-top: 10px; 
+  transition: 0.5s ease;
+}
+
+ul li a:hover {
+   background-color: #750b0b; 
+   color: white; 
+}
+
+ul li.active a{
+  /*show current page by modifying active*/
+   background-color: #750b0b; 
+   color: white; 
+}
+
+.logo img{
+  float:left; 
+  height: 50px; 
+}
+
+.header {
+  padding: 20px; /* some padding */
+  color: white;
+  text-align: center; 
+  font-weight: bold;
+   background-image:  
+ /*add tint to the background image so that text pops on page. */
+ linear-gradient( 
+   rgba(0 , 0 , 0 , 0.5),
+   rgba(0 , 0 , 0 , 0.5)
+ ),
+    
+  url(https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/87368660_2745885218794651_8089039013266063360_o.jpg?_nc_cat=106&_nc_sid=dd9801&_nc_ohc=aVEk83FcNvMAX-A6dIr&_nc_ht=scontent-lga3-1.xx&oh=97fc69d2a6949277560fbe9c0446385b&oe=5ED1BEDD);
+  
+  height: 100vh; /*use viewpoint units*/ 
+  background-size: cover;
+  background-position: center; 
+}
+
+.header h1 {
+  font-size: 90px;
+}
+
+.header p {
+  font-size: 25px;
+}
+
+.header a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  margin: 5px;
+}
+
+.header a:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width: 450px) {
+   ul li { 
+  display: block;
+    }  
+}
